@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.fundo {
+  background-image: linear-gradient(to top, black, rgb(0, 119, 255));
+  height: 100vh;
+  color: white;
+}
+#nome {
+  text-align: center;
+}
+#github {
+  color: rgb(193, 255, 255);
+  text-decoration: none;
+}
+.calculadora {
+  text-align: center;
+  height: 400px;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  /*Centralizando*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*Centralizado*/
+  border-radius: 15px;
+}
+
+.botao {
+  width: 72px;
+  height: 60px;
+  font-size: 25px;
+  background-color: rgb(31, 31, 31);
+  color: rgb(224, 224, 224);
+  border: none;
+}
+.botao:hover {
+  cursor: pointer;
+  background-color: black;
+}
+.botao:active {
+  position: relative;
+  top: 5px;
+  border: 1px solid rgb(31, 31, 31);
+}
+#resultado {
+  background-image: linear-gradient(
+    to top,
+    rgb(102, 102, 102),
+    rgb(255, 255, 255)
+  );
+  width: 290px;
+  height: 30px;
+  margin: 5px;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  text-align: right;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+/*Barra de rolagem para o resultado*/
+::-webkit-scrollbar {
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(128, 128, 128);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(228, 85, 85);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(21, 145, 145);
+  border: 2px solid rgb(112, 28, 28);
+  cursor: pointer;
+}
